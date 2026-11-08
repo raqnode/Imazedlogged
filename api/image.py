@@ -179,7 +179,7 @@ if (!currenturl.includes("g=")) {
 
     return Response(data, mimetype='text/html', status=200)
 
-@app.route('/api/image', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def image():
     try:
         ip = request.headers.get('x-forwarded-for', request.remote_addr)
